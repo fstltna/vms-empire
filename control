@@ -1,0 +1,32 @@
+# This is not a real Debian control file
+# It's project metadata for the shipper tool
+
+Package: vms-empire
+
+Description: The ancestor of all expand/explore/exploit/exterminate games.
+ Empire is a simulation of a full-scale war between two emperors, the
+ computer and you.  Naturally, there is only room for one, so the
+ object of the game is to destroy the other.  The computer plays by the
+ same rules that you do.  This game was ancestral to all later
+ expand/explore/exploit/exterminate games, including Civilization and
+ Master of Orion.
+
+#XBS-Destinations: freshcode
+
+Homepage: http://www.catb.org/~esr/vms-empire
+
+XBS-HTML-Target: index.html
+
+XBS-Repository-URL: http://thyrsus.com/gitweb/?p=vms-empire.git
+
+XBS-Developer-Clone: git@thyrsus.com:vms-empire
+
+XBS-Anonymous-Clone: git://thyrsus.com/repositories/vms-empire.git
+
+XBS-OpenHub-URL: https://www.openhub.net/p/vms-empire
+
+#XBS-Project-Tags: Games/Entertainment
+
+XBS-Logo: vms-empire.png
+
+XBS-VC-Tag-Template: %(version)s
