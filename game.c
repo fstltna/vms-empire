@@ -564,6 +564,7 @@ int restore_game(void)
     f = fopen (savefile, "r"); /* open for input */
     if (f == NULL) {
 	perror ("Cannot open saved game");
+
 	return (false);
     }
     if (fgets(buf, sizeof(buf), f) == NULL)

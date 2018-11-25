@@ -4,7 +4,7 @@
 # See the file COPYING, distributed with empire, for restriction
 # and warranty information.
 
-VERS=1.15-bbs
+VERS=1.16-bbs
 
 # Use -g to compile the program for debugging.
 #DEBUG = -g -DDEBUG

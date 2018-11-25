@@ -75,6 +75,7 @@ char *argv[];
 	    break;
 	case '?': /* illegal option? */
 	    errflg++;
+	    printf("Unknown option: '%s'\n", optarg); 
 	    break;
 	}
     }
