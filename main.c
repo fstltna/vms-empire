@@ -25,11 +25,30 @@ options:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include "empire.h"
 #include "extern.h"
 
 #define OPTFLAGS "w:s:d:S:f:b"
+
+char* RemoveSpaces(char* source)
+{
+    char *output=source;
+    for (int i = 0, j = 0; i<strlen(source); i++,j++)                        /* Evaluate each character in the source */
+    {
+        if (((source[i] >= 48) && (source[i] <= 57)) || ((source[i] >= 65) && (source[i] <= 90)) || ((source[i] >= 97) && (source[i] <= 122)) ) /* If the character is allowed */
+	{
+            output[j]=source[i]; /* Copy that character to the output char[] */
+	}
+        else
+	{
+            output[j]='_'; /* Copy the replacement character to the output char[] */
+	}
+    }
+    /*output[j] = '\0';*/
+    return output;
+}
 
 int main(argc, argv)
 int argc;
@@ -79,6 +98,7 @@ char *argv[];
 	    break;
 	}
     }
+    savefile = RemoveSpaces(savefile);
     printf("Playing as Player Name = '%s'\n", savefile);
     if (errflg || (argc-optind) != 0) {
 	(void) printf ("empire: usage: empire [-w water] [-s smooth] [-d delay] [-f savefile] [-b]\n");

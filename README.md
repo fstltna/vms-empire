@@ -1,4 +1,4 @@
-# VMS-Empire 1.16bbs
+# VMS-Empire 1.17bbs
 Version of VMS Empire for use as a BBS door
 
 ***
