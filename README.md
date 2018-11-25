@@ -1,7 +1,8 @@
-# vms-empire 1.16bbs
+# VMS-Empire 1.16bbs
 Version of VMS Empire for use as a BBS door
 
 ***
+Official support sites: [Official Github Repo](https://github.com/fstltna/vms-empire) - [Official Forum](https://synchronetbbs.org/index.php/forum/vms-empire) 
 
 Set it up in scfg like this:
 
