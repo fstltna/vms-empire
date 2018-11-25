@@ -49,7 +49,7 @@ char* RemoveSpaces(char* source)
     /*output[j] = '\0';*/
     return output;
 }
-
+char PlayerName[256] = "empsave.dat"; /* Used to keep the string safe */
 int main(argc, argv)
 int argc;
 char *argv[];
@@ -65,7 +65,7 @@ char *argv[];
     sflg = 5;
     dflg = 2000;
     Sflg = 10;
-    savefile = "empsave.dat";
+    savefile = PlayerName;
     bbsmode = 0;
 
     /*
