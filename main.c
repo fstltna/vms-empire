@@ -78,6 +78,7 @@ char *argv[];
 	    break;
 	}
     }
+    printf("Playing as Player Name = '%s'\n", savefile);
     if (errflg || (argc-optind) != 0) {
 	(void) printf ("empire: usage: empire [-w water] [-s smooth] [-d delay] [-f savefile] [-b]\n");
 	exit (1);

@@ -37,9 +37,9 @@ empire(void)
     rndini (); /* init random number generator */
 
     clear_screen (); /* nothing on screen */
-    pos_str (6, 0, "BBS Version of EMPIRE 1.14.bbs - https://synchronetbbs.org");
+    pos_str (6, 0, "BBS Version of EMPIRE 1.15.bbs - https://SynchronetBBS.org");
     pos_str (7, 0, "EMPIRE, Version 5.00 site Amdahl 1-Apr-1988");
-    pos_str (8, 0, "Detailed directions are in EMPIRE.DOC\n");
+    pos_str (8, 0, "Detailed directions are at https://SynchronetBBS.org/VMS-Empire.html\n");
     (void) redisplay ();
 
     if (!restore_game ()) /* try to restore previous game */
